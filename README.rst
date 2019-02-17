@@ -1,7 +1,7 @@
 Base Web App Template
 ---------------------
 
-A base node + express + postgres web app template.
+A base node + express + postgres web app template to kick-start new projects.
 
 How it works
 ------------
