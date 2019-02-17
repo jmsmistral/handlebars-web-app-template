@@ -1,0 +1,64 @@
+{
+  "name": "web-app-template",
+  "version": "1.0.0",
+  "description": "A base template for node express web apps",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmsmistral/web-app-template"
+  },
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=app* nodemon app.js",
+    "lint": "./node_modules/.bin/eslint app.js"
+  },
+  "keywords": [
+    "base",
+    "template",
+    "web",
+    "app",
+    "node",
+    "express",
+    "postgres"
+  ],
+  "author": "Jonathan Sacramento",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "bootstrap": "4.2.1",
+    "bootstrap-tokenfield": "0.12.0",
+    "chalk": "2.4.1",
+    "cookie-parser": "1.4.3",
+    "debug": "4.1.1",
+    "express": "4.16.4",
+    "express-handlebars": "3.0.0",
+    "express-session": "1.15.6",
+    "highcharts": "7.0.1",
+    "jquery": "3.3.1",
+    "jquery-ui-dist": "1.12.1",
+    "morgan": "1.9.1",
+    "nodemon": "1.18.9",
+    "passport": "0.4.0",
+    "pg": "7.7.1"
+  },
+  "devDependencies": {
+    "eslint": "5.11.1",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-html": "5.0.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-react": "7.12.2"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 3000,
+      "VIEWS_DIR": "views"
+    }
+  }
+}

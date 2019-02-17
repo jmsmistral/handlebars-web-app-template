@@ -1,0 +1,13 @@
+.jewce-chart {
+  margin-bottom: 3em;
+}
+
+/* 
+ * Hack to force Highcharts to set plotLines 
+ * attributes becasue it's a sack of shite
+ * */
+.highcharts-plot-line {
+  fill: none;
+  stroke: red;
+  stroke-width: 1px;
+}

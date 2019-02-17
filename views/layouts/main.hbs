@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>{{title}}</title>
+
+  <!-- Core styles -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/jquery-ui.min.css" rel="stylesheet">
+  <link href="/css/highcharts.css" rel="stylesheet">
+  <link href="/css/bootstrap-tokenfield.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="/css/{{cssScript}}" rel="stylesheet">
+  <link href="/css/sidebar.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    Menu
+                </a>
+            </li>
+            <li>
+                <a href="/">Main page</a>
+            </li>
+            <li>
+                <a href="/input">Second page</a>
+            </li>
+            <li>
+                <a href="/config">Another page</a>
+            </li>
+            <li>
+                <a href="/logout">Log out</a>
+            </li>
+        </ul>
+    </div>
+    <!-- #sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <!-- Page Header -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2">
+            <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle" style="margin-top: 0.5em">Menu</a>
+          </div>
+          <div class="col-10">
+            <h1>Base Web App Template!</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        </br>
+      </div>
+
+      {{{body}}}
+
+    </div>
+    <!-- #page-content-wrapper -->
+  </div>
+  <!-- #wrapper -->
+  
+  <!-- Core scripts -->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/jquery-ui.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/highcharts.js"></script>
+  <script src="/js/bootstrap-tokenfield.min.js"></script>
+
+  <!-- Custom scripts -->
+  <script src="/js/{{jsScript}}"></script>
+  <script src="/js/sidebar.js"></script>
+</body>
+</html>
