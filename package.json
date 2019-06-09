@@ -4,11 +4,11 @@
   "description": "A base template for node express web apps",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jmsmistral/web-app-template"
+    "url": "git+https://github.com/jmsmistral/handlebars-web-app-template"
   },
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/mocha ./test/**/test_*.js",
     "start": "DEBUG=app* nodemon app.js",
     "lint": "./node_modules/.bin/eslint app.js"
   },
@@ -33,7 +33,7 @@
     "express-handlebars": "3.0.0",
     "express-session": "1.15.6",
     "highcharts": "7.0.1",
-    "jquery": "3.3.1",
+    "jquery": "3.4.1",
     "jquery-ui-dist": "1.12.1",
     "morgan": "1.9.1",
     "nodemon": "1.18.9",
@@ -42,12 +42,14 @@
     "popper.js": "1.14.7"
   },
   "devDependencies": {
+    "chai": "4.2.0",
     "eslint": "5.11.1",
     "eslint-config-airbnb": "17.1.0",
     "eslint-plugin-html": "5.0.0",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.2",
-    "eslint-plugin-react": "7.12.2"
+    "eslint-plugin-react": "7.12.2",
+    "mocha": "6.1.4"
   },
   "nodemonConfig": {
     "restartable": "rs",
